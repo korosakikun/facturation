@@ -44,9 +44,9 @@
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Liste des clients" Grid.Row="3">
-            <DataGrid Name="dg_clients" ItemsSource="{Binding Clients}" CanUserAddRows="False" AutoGenerateColumns="False">
+            <DataGrid Name="dg_clients" ItemsSource="{Binding Clients}" CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Nom" Binding="{Binding nom}"/>
+                    <DataGridTextColumn Header="Nom" Binding="{Binding nom}" />
                     <DataGridTextColumn Header="Prenom" Binding="{Binding prenom}"/>
                     <DataGridTextColumn Header="Numero" Binding="{Binding numero}"/>
                     <DataGridTextColumn Header="Adresse" Binding="{Binding adresse}"/>

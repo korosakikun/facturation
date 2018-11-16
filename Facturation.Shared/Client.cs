@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace facturation
+namespace Facturation.Shared
 {
-     public class Client
-
+    public class Client
     {
         public int id { get; set; }
         public string nom { get; set; }

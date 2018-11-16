@@ -71,7 +71,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Client.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -103,6 +102,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Facturation.BLL\Facturation.BLL.csproj">
+      <Project>{4F5A5B92-7DA6-4DC0-B627-0C24319A3B6A}</Project>
+      <Name>Facturation.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturation.Shared\Facturation.Shared.csproj">
+      <Project>{a1ec83fc-40a6-41f4-b019-b99e5531e925}</Project>
+      <Name>Facturation.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
